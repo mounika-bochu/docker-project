@@ -1,0 +1,24 @@
+services:
+  movies:
+    build: ./movies
+    image: movies:v1
+    ports:
+      - "81:80"
+
+  dth:
+    build: ./dth
+    image: dth:v1
+    ports:
+      - "82:80"
+
+  recharge:
+    build: ./recharge
+    image: recharge:v1
+    ports:
+      - "83:80"
+
+  train:
+    build: ./train
+    image: train:v1
+    ports:
+      - "84:80"
