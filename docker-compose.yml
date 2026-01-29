@@ -1,24 +1,24 @@
 services:
   movies:
-    build: ./movies
+    build: bochumounika/movies
     image: movies:v1
     ports:
       - "81:80"
 
   dth:
-    build: ./dth
+    build: bochumounika/dth
     image: dth:v1
     ports:
       - "82:80"
 
   recharge:
-    build: ./recharge
+    build: bochumounika/recharge
     image: recharge:v1
     ports:
       - "83:80"
 
   train:
-    build: ./train
+    build: bochumounika/train
     image: train:v1
     ports:
       - "84:80"
